@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [][https://mojtabamosavi.github.io/insure-landing-page-master.io/)
+- Live Site URL: [][https://mojtabamosavi.github.io/insure-landing-page-master.io)
 
 ## My process
 
