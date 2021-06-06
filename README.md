@@ -73,6 +73,6 @@ Users should be able to:
 - [Example resource 2](https://css-tricks.com/can-make-icon-system-accessible/) - A helpful guide on accessible icons.
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/MojtabaMosavi)
+- Frontend Mentor - [@Check out my profile on Frontend Mentor](https://www.frontendmentor.io/profile/MojtabaMosavi)
 
 
