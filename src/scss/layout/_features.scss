@@ -1,0 +1,72 @@
+@use "../abstracts/" as abs;
+
+/*|| Features*/
+
+.features {
+  text-align: center;
+  padding: 0 1.6rem;
+  margin-bottom: 8.9rem;
+
+  &__divider {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    font-size: 2.9rem;
+    margin-bottom: 4.4rem;
+  }
+
+  &__feature {
+    max-width: 20.625rem;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 3.6rem;
+    }
+  }
+
+  /* breakpoint s */
+  @include abs.breakpoint("s") {
+    margin-bottom: 10.3rem;
+    padding: 0 1rem;
+    &__heading {
+      text-align: left;
+    }
+
+    &__divider {
+      margin: 0 0 2rem 0;
+    }
+    &__content-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__feature {
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  /* breakpoint m */
+  @include abs.breakpoint("m") {
+    text-align: left;
+    padding: 0 10rem;
+
+    &__divider {
+      margin-bottom: 3rem;
+    }
+
+    &__heading {
+      font-size: 4.4rem;
+      margin-bottom: 4.7rem;
+    }
+
+    &__feature {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

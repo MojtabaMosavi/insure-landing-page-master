@@ -1,0 +1,8 @@
+@use "../abstracts/" as abs;
+
+.divider {
+  width: 9.375rem;
+  height: 1px;
+  background-color: abs.$Very-Light-Gray;
+  border-radius: 2rem;
+}

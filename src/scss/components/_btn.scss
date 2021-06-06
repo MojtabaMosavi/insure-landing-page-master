@@ -1,0 +1,17 @@
+@use "../abstracts/" as abs;
+
+/* Btn*/
+
+.btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: abs.$Very-Light-Gray;
+
+  &--xs {
+    padding: 0.55rem 1.7rem;
+  }
+
+  &--s {
+    padding: 0.5rem 1.4re;
+  }
+}

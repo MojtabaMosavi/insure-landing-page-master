@@ -1,0 +1,94 @@
+@use "../abstracts/" as abs;
+@use "../base/animation" as *;
+
+/*|| Cta */
+
+.cta {
+  margin: 0 1.55rem 8.7rem 1.55rem;
+  background-color: abs.$Dark-Violet;
+  color: abs.$Very-Light-Gray;
+  text-align: center;
+  position: relative;
+  overflow-y: hidden;
+  &__content-wrapper {
+    padding: 4.4rem 2em 5.2rem 2rem;
+
+    &::after {
+      content: url("../../../dist/images/bg-pattern-how-we-work-mobile.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__heading {
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+    margin-bottom: 2.8rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__btn {
+    background-color: abs.$Dark-Violet;
+    border: 2px solid abs.$Very-Light-Gray;
+    position: relative;
+    z-index: 2;
+
+    &:hover {
+      background-color: abs.$Very-Light-Gray;
+      color: abs.$Dark-Violet;
+    }
+  }
+
+  /* breakpoint s*/
+  @include abs.breakpoint("s") {
+    &__content-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &::after {
+        content: url("../../../dist/images/bg-pattern-how-we-work-desktop.svg");
+      }
+    }
+
+    &__heading {
+      margin-bottom: 0;
+      text-align: left;
+      max-width: 22rem;
+    }
+
+    &__btn {
+      align-self: center;
+      max-width: 13rem;
+    }
+  }
+
+  /* breakpoint m*/
+
+  @include abs.breakpoint("m") {
+    margin: 0 10.4rem;
+    margin-bottom: 9.2rem;
+
+    &__content-wrapper {
+      padding: 4.6rem 5rem;
+    }
+
+    &__heading {
+      max-width: 25rem;
+      font-size: 2.6rem;
+      line-height: 3.2rem;
+    }
+  }
+
+  /* breakpoint l*/
+
+  @include abs.breakpoint("l") {
+    &__heading {
+      margin-right: 0;
+      max-width: 29rem;
+      font-size: 3.33rem;
+    }
+  }
+}

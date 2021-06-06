@@ -1,0 +1,18 @@
+@use "./variables";
+
+/*|| mixin for media queries   */
+
+@mixin breakpoint($breakpoint) {
+  @media only screen and (min-width: map-get(variables.$breakpoints, $breakpoint )) {
+    @content;
+  }
+}
+
+/*|| making an item flex container width custom properties  */
+
+@mixin make-flex($al-item, $js-content, $flex-d) {
+  display: flex;
+  align-items: $al-item;
+  justify-content: $js-content;
+  flex-direction: $flex-d;
+}

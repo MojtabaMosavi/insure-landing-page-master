@@ -1,0 +1,41 @@
+@use "../abstracts";
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: abstracts.$font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: abstracts.$font-heading;
+}
+
+/* removing default focus and setting focus on tabed achor and button element*/
+a {
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: initial;
+  }
+}
+
+button {
+  outline: none;
+  :focus {
+    outline: none;
+  }
+
+  :focus-visible {
+    outline: initial;
+  }
+}

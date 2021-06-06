@@ -1,0 +1,27 @@
+/*|| Colors */
+$Dark-Violet: hsl(256, 26%, 20%);
+$Grayish-Blue: hsl(216, 30%, 68%);
+$Very-Dark-Violet: hsl(270, 9%, 17%);
+$Dark-Grayish-Violet: hsl(273, 4%, 51%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+/*|| Fonts */
+$font-size: 1rem;
+/* font body */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+$font-body: "Karla", sans-serif;
+/* font heading*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+$font-heading: "DM Serif Display", sans-serif;
+
+/* || Breakpoints */
+/* 
+small = 688px    
+medium = 992px
+large = 1312px */
+
+$breakpoints: (
+  "s": 43em,
+  "m": 62em,
+  "l": 82em,
+);
