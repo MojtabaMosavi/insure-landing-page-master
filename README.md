@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://mojtabamosavi.github.io/insure-landing-page-master.io/](https://your-live-site-url.com)
+- Live Site URL: [][https://mojtabamosavi.github.io/insure-landing-page-master.io/)
 
 ## My process
 
